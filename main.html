@@ -11,7 +11,7 @@ table, td {
 
 <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
 
-<table id="myTable">
+<table id="sampleTable">
   <tr>
     <td>Row1 cell1</td>
     <td>Row1 cell2</td>
@@ -27,11 +27,11 @@ table, td {
 </table>
 <br>
 
-<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="insert_Row()">Insert row</button>
 
 <script>
-function myFunction() {
-  var table = document.getElementById("myTable");
+function insert_Row() {
+  var table = document.getElementById("sampleTable");
   var row = table.insertRow(0);
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
